@@ -1,3 +1,4 @@
 {
+  "plugins": ["emotion"],
   "presets": ["env", "stage-0"]
 }
