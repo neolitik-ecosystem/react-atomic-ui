@@ -1,6 +1,6 @@
 {
   "plugins": ["emotion"],
-  "presets": ["env", "stage-0"],
+  "presets": ["react","es2015", "env", "stage-0"],
   "env": {
     "production": {
       "plugins": [["emotion", { "hoist": true }]]
