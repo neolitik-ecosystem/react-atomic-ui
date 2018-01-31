@@ -35,11 +35,21 @@
   "homepage":
     "https://github.com/neolitik-ecosystem/react-atomic-ui.git#readme",
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.11",
+    "@storybook/addon-info": "^3.3.11",
+    "@storybook/addon-knobs": "^3.3.11",
+    "@storybook/addon-links": "^3.3.11",
+    "@storybook/addon-options": "^3.3.11",
+    "@storybook/addons": "^3.3.11",
+    "@storybook/react": "^3.3.11",
+    "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
     "eslint": "^4.14.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-watch": "^3.1.3",
@@ -49,15 +59,8 @@
     "npm-run-all": "^4.1.2",
     "prettier": "^1.9.2",
     "react": "^16.2.0",
-    "rimraf": "^2.6.2",
-    "@storybook/react": "^3.3.11",
-    "@storybook/addon-actions": "^3.3.11",
-    "@storybook/addon-info": "^3.3.11",
-    "@storybook/addon-knobs": "^3.3.11",
-    "@storybook/addon-links": "^3.3.11",
-    "@storybook/addon-options": "^3.3.11",
-    "@storybook/addons": "^3.3.11",
-    "@storybook/storybook-deployer": "^2.2.0"
+    "react-dom": "^16.2.0",
+    "rimraf": "^2.6.2"
   },
   "jest": {
     "collectCoverage": true,
@@ -78,6 +81,7 @@
   "dependencies": {
     "babel-plugin-emotion": "^8.0.12",
     "emotion": "^8.0.12",
+    "polished": "^1.9.0",
     "react-emotion": "^8.0.12"
   }
 }
