@@ -15,6 +15,7 @@ We follow [GitFlow process](http://nvie.com/posts/a-successful-git-branching-mod
 ```
 
 During `precommit`, task will try to fix lint issue. If lint or test tasks failed, commit will not be accepted.
+Then you can push your code and make a pull request.
 
 ## Fix a bug
 
