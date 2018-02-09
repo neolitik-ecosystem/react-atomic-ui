@@ -24,8 +24,7 @@
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages"
   },
-  "author":
-    "David Ouanounou <david@ouanounou.fr> (https://github.com/davidouanounou)",
+  "author": "David Ouanounou <david@ouanounou.fr> (https://github.com/davidouanounou)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -34,11 +33,10 @@
   "bugs": {
     "url": "https://github.com/neolitik-ecosystem/react-atomic-ui.git/issues"
   },
-  "homepage":
-    "https://github.com/neolitik-ecosystem/react-atomic-ui.git#readme",
+  "homepage": "https://github.com/neolitik-ecosystem/react-atomic-ui.git#readme",
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.11",
-    "@storybook/addon-info": "^3.3.11",
+    "@storybook/addon-info": "^3.3.12",
     "@storybook/addon-knobs": "^3.3.11",
     "@storybook/addon-links": "^3.3.11",
     "@storybook/addon-options": "^3.3.11",
@@ -78,7 +76,11 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./config/setupTests.js",
     "collectCoverage": true,
-    "collectCoverageFrom": ["lib/**", "!lib/index.js", "!lib/**/*.stories.js"],
+    "collectCoverageFrom": [
+      "lib/**",
+      "!lib/index.js",
+      "!lib/**/*.stories.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 90,
@@ -87,10 +89,16 @@
         "statements": 90
       }
     },
-    "moduleDirectories": ["node_modules", "./"]
+    "moduleDirectories": [
+      "node_modules",
+      "./"
+    ]
   },
   "lint-staged": {
-      "*.{js}": ["npm run review", "git add"]
+    "*.{js}": [
+      "npm run review",
+      "git add"
+    ]
   },
   "dependencies": {
     "prop-types": "^15.6.0",
