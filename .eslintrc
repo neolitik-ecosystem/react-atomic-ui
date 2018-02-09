@@ -1,6 +1,36 @@
 {
-    "extends": "airbnb",
-    "rules": {
-      "func-names": ["error", "never"]
+  "extends": ["airbnb-base", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "fetch": true,
+    "SiteInfo": true,
+    "SocialLinks": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
+  },
+  "plugins": ["react", "jest"],
+  "rules": {
+    "class-methods-use-this": 0,
+    "comma-dangle": ["error", "never"],
+    "max-len": [1, 150],
+    "no-confusing-arrow": 0,
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-param-reassign": ["error", {
+      "props": false
+    }],
+    "no-underscore-dangle": 0,
+    "prefer-template": 0,
+    "import/extensions": 0,
+    "react/display-name": 0
   }
+}
