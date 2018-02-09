@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-  - 6
+- 6
 cache:
   directories:
   - node_modules
-before_script:
+before_script: 
 script:
-  - npm run review
+- npm run review
 after_success:
   - yarn deploy-storybook --ci --host-token-env-variable=GITHUB_TOKEN
 env:
@@ -15,3 +15,15 @@ env:
 branches:
   only:
   - master
+deploy:
+  matrix:
+  - provider: pages
+    skip-cleanup: true
+    github-token: "$GITHUB_TOKEN"
+    keep-history: true
+    on:
+      branch: gh-pages
+  - provider: npm
+    email: david@ouanounou.fr
+    api_key:
+      secure: LLevJagJOErl3MsEjnsSV7cVThTatl/i9jZIcLb9DFNpwl1t/QAzQayMrR0/rdO+Tf5cm3OpNlkNl7MP087DF4J/2bpe5+f3knHjFij5azlKasU+Vp+qjRZ8iWW7tFGbADM61zL8s0I1lyxqzK0o4Bkd+1H6uyKwstLAG1dX6L8InlVoKjBVVpmfjFqNhIbW0dSg5kj3hTTagSF0KV/uR3qWRQSVdcefWNvxviFwnEuDIdRJyHKfMm8v0lZuNDjh96TccCzOPRUNXh9mFHn5vvowEMyz36m7RKwxq6jsg8TcE996WIrA5M4guZehtELz7/MfKUGGqcKBwwiG/z7ccOKmn33k+Qk0Ry68Hgpoqj9nvVVxLjvk9JdKznRXs9Ito2IJ6C92u39klAEg9ovMBF2zijsSj+7HSa4eztDg6jKOh71XZYrMl1T1AqLPYWmvH+V2lIBrsvp/WGAgIsXpz3PtytIDztW0Kx4ESZZGCOUyHrMxZLSC0bysfJoBda0bmqsXB+KRnAR3Xnc3SASarWA2CgGFxgRsFp7NDrmZbXRJKTj5OYZeezXqud9kvSZYeJ8qoSSNFiKIuOhBnnh480nnP8t9jX7n6uBc7lKIADoIAn4YZ0UZCbVxoFZXajeAxQN/WrRIrTKpCZP5jaUZacOxxp06g0ArJCN79wPAqrg=
