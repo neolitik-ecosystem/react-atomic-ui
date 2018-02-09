@@ -89,7 +89,7 @@
     "moduleDirectories": ["node_modules", "./"]
   },
   "lint-staged": {
-      "*.{js,jsx}": "run-s lint test:clean test test:coverage:report"
+      "*.{js}": ["run-s lint --fix test:clean test test:coverage:report", "git add"]
   },
   "dependencies": {
     "prop-types": "^15.6.0",
