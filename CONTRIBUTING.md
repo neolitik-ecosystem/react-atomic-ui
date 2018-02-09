@@ -29,3 +29,8 @@ Confirm that you have the right to contribute and license the code in question. 
 ## Coding standards
 ES6 syntax, targeting an ES5 runtime
 Airbnb base react
+
+# Tooling
+
+[Travis](https://travis-ci.org/neolitik-ecosystem/)
+[Better code Hub](https://bettercodehub.com/)
