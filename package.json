@@ -13,7 +13,7 @@
     "lint:watch": "esw -w lib/**",
     "precommit": "lint-staged",
     "prepare": "npm run build",
-    "review": "run-s lint test:clean test test:coverage:report",
+    "review": "run-s lint --fix test:clean test test:coverage:report",
     "test": "jest",
     "test:clean": "rimraf ./coverage",
     "test:watch": "jest --watch",
@@ -89,7 +89,7 @@
     "moduleDirectories": ["node_modules", "./"]
   },
   "lint-staged": {
-      "*.{js}": ["run-s lint --fix test:clean test test:coverage:report", "git add"]
+      "*.{js}": ["npm run review", "git add"]
   },
   "dependencies": {
     "prop-types": "^15.6.0",
