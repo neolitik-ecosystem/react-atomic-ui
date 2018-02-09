@@ -9,8 +9,8 @@
   "scripts": {
     "build": "babel lib -d build --ignore 'stories.js,test.js'",
     "build:watch": "babel lib -w -d build",
-    "lint": "eslint lib/** test/**",
-    "lint:watch": "esw -w lib/** test/**",
+    "lint": "eslint lib/**",
+    "lint:watch": "esw -w lib/**",
     "precommit": "lint-staged",
     "prepare": "npm run build",
     "review": "run-s lint test:clean test test:coverage:report",
