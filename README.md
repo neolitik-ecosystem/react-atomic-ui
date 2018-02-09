@@ -11,4 +11,4 @@ React Components Library based on Atomic desing concepts (http://atomicdesign.br
 
 ### Documentation
 
-[Storybook](https://react-neolitij.github.io/atomic-ui)
+[Storybook](neolitik-ecosystem.github.io/react-atomic-ui/)
