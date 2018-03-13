@@ -12,7 +12,7 @@
     "lint": "eslint lib/**",
     "lint:fix": "eslint lib/** --fix",
     "lint:watch": "esw -w lib/**",
-    "precommit": "lint-staged",
+    "precommit": "npm run review",
     "prepare": "npm run build",
     "review": "run-s lint:fix test:clean test",
     "test": "jest",
