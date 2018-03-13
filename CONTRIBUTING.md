@@ -8,6 +8,7 @@ We follow [GitFlow process](http://nvie.com/posts/a-successful-git-branching-mod
  2. Code your feature
  3. Create stories
  4. Create tests (threshold to 90%)
+ 5. Export your component within `lib/index.js`
  
  When commiting code, `precommit` task is launch to ensure lint and test are ready. To pre-validate code you can manually run :
  ```shell
