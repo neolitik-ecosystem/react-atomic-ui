@@ -1,6 +1,6 @@
 {
   "name": "neolitik-react-atomic-ui",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "description": "Lightweight React library based on Atomic design concept",
   "main": "build/index.js",
   "directories": {
